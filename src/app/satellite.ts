@@ -13,9 +13,15 @@ export class Satellite {
 		this.orbitType = orbitType;
 		this.operational = operational;
    }
-	
+//    if(this.type === isSpaceDebris){
+// 	this.position = message.commands[i].value;
+// 	roverStatus.position = this.position;
+// 	returnStatement.results[i].roverStatus = roverStatus;
 	isSpaceDebris(): boolean {
-		return true;
+		if(this.type === "Space Debris"){
+			return true
+		}
+		
    }
 
 }
